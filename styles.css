@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #FFF8E7;
+    font-size: 5rem;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Top-right button */
+.corner-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    color: #FFF8E7;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.corner-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
